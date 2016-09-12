@@ -1,0 +1,30 @@
+﻿//Harish Sune
+//harishsune@hotmail.com
+//22th March 2015
+
+Constructor in c#
+
+Constructor is a member function which automatically gets executed when the object of the class is created.
+Constructors are use to initialized private data member of the class.
+
+
+Constructor has same name like class name.
+Constructor can be overloaded.
+Constructor cannot be overridden.
+Constructor cannot be inherited.
+Constructor cannot be abstract.
+Constructor cannot be sealed.
+
+
+Types of constructor-
+Default constructor -
+	 Every class provides this constructor only when you don't define any other parameterized constructor in the class.
+if you include any parameterized constructor then you explicitly need to define a default constructor.
+
+Parameterized constructor-
+	When you want to pass arguments to the constructor the parameterized constructor is used.
+
+Static constructor-
+  Static constructor is same like static block in Java. 
+  Static constructor is use to initialize static member of a class.
+  If your class contain main method and even if you don't create object of the class your static constructor will get executed.

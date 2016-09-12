@@ -1,0 +1,38 @@
+﻿//Harish Sune
+//harishsune@hotmail.com
+//22th March 2015
+
+4.Stack
+
+It represents a last-in, first out collection of object.	It is used when you need a last-in, first-out access of items. 
+When you add an item in the list, it is called pushing the item and when you remove it, it is called popping the item.
+
+Methods and Properties of the Stack Class
+
+The following table lists some of the commonly used properties of the Stack class:
+
+Property	Description
+
+Count	-	Gets the number of elements contained in the Stack.
+
+The following table lists some of the commonly used methods of the Stack class:
+
+S.N		Method Name & Purpose
+
+1		public virtual void Clear(); 
+		Removes all elements from the Stack.
+
+2		public virtual bool Contains( object obj ); 
+		Determines whether an element is in the Stack.
+
+3		public virtual object Peek();
+		Returns the object at the top of the Stack without removing it.
+
+4		public virtual object Pop();
+		Removes and returns the object at the top of the Stack.
+
+5		public virtual void Push( object obj );
+		Inserts an object at the top of the Stack.
+
+6		public virtual object[] ToArray();
+		Copies the Stack to a new array.

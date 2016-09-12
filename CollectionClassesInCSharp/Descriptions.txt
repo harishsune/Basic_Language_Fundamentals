@@ -1,0 +1,18 @@
+﻿//Harish Sune
+//harishsune@hotmail.com
+//22th March 2015
+
+Collection classes are specialized classes for data storage and retrieval. These classes provide support for stacks, queues,
+ lists, and hash tables. Most collection classes implement the same interfaces.
+
+Collection classes serve various purposes, such as allocating memory dynamically to elements and accessing a list of items 
+on the basis of an index etc. These classes create collections of objects of the Object class, which is the base class for 
+all data types in C#.
+
+Types:
+1.ArrayList
+2.HashtTable
+3.SortedList
+4.Stack
+5.Queue
+

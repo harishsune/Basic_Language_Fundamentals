@@ -1,0 +1,27 @@
+﻿//Harish Sune
+//harishsune@hotmail.com
+//22th March 2015
+
+Interface provides contract that must be followed by the class which inherits Interface.
+
+An interface looks like a abstract class, but has no implementation. The only thing it contains are declarations of 
+events, indexers, methods and/or properties. The reason interfaces only provide declarations is because they are inherited by 
+classes and structs, which must provide an implementation for each interface member declared.
+An interface can be pure abstract class.
+
+So, what are interfaces good for if they don't implement functionality? They're great for putting together plug-n-play like 
+architectures where components can be interchanged at will. Since all interchangeable components implement the same interface,
+ they can be used without any extra programming. The interface forces each component to expose specific public members that 
+ will be used in a certain way.
+
+Because interfaces must be implemented by derived classes and structs, they define a contract. For instance, if class foo 
+implements the IDisposable interface, it is making a statement that it guarantees it has the Dispose() method, which is the 
+only member of the IDisposable interface. Any code that wishes to use class foo may check to see if class foo implements 
+IDisposable. When the answer is true, then the code knows that it can call foo.Dispose(). Listing 13-1 shows how to define an 
+interface:
+
+Interface can have:
+declaration of Methods,Events,Properties,Indexers.
+
+cannot have:
+delegates,fields,definitions of Methods.

@@ -1,0 +1,48 @@
+﻿//Harish Sune
+//harishsune@hotmail.com
+//22th March 2015
+
+2.HashTable
+
+The Hashtable class represents a collection of key-and-value pairs that are organized based on the hash code of the key. It 
+uses the key to access the elements in the collection.
+
+A hash table is used when you need to access elements by using key, and you can identify a useful key value. Each item in 
+the hash table has a key/value pair. The key is used to access the items in the collection.
+
+Methods and Properties of the Hashtable Class
+
+The following table lists some of the commonly used properties of the Hashtable class:
+
+Property		Description
+
+Count		-	Gets the number of key-and-value pairs contained in the Hashtable.
+
+IsFixedSize	-	Gets a value indicating whether the Hashtable has a fixed size.
+
+IsReadOnly	-	Gets a value indicating whether the Hashtable is read-only.
+
+Item		-	Gets or sets the value associated with the specified key.
+
+Keys		-	Gets an ICollection containing the keys in the Hashtable.
+
+Values		-	Gets an ICollection containing the values in the Hashtable.
+
+The following table lists some of the commonly used methods of the Hashtable class:
+
+S.N			Method Name & Purpose
+
+1			public virtual void Add( object key, object value ); 
+			Adds an element with the specified key and value into the Hashtable.
+
+2			public virtual void Clear(); 
+			Removes all elements from the Hashtable.
+
+3			public virtual bool ContainsKey( object key ); 
+			Determines whether the Hashtable contains a specific key.
+
+4			public virtual bool ContainsValue( object value ); 
+			Determines whether the Hashtable contains a specific value.
+
+5			public virtual void Remove( object key ); 
+			Removes the element with the specified key from the Hashtable.

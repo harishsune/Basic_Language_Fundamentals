@@ -1,0 +1,17 @@
+﻿//Harish Sune
+//harishsune@hotmail.com
+//22th March 2015
+
+Constants are the value that do not change throughout the program.
+
+An enumeration is a set of named integer constants. An enumerated type is declared using the enum keyword.
+
+C# enumerations are value data type.
+For enum you can use only number datatypes for eg. int,short,ushort,uint but not string and object.
+By default the enum use int but in case if you want to specify then you need to write : in front of enum variable;
+
+eg. enum Temp:short
+{
+//Values
+
+}

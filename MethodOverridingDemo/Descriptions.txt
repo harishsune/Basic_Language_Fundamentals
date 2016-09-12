@@ -1,0 +1,19 @@
+﻿//Harish Sune
+//harishsune@hotmail.com
+//22th March 2015
+
+Dynamic Polymorphism also called as late binding and Run time Polymorphism
+
+An override method provides a new implementation of a member that is inherited from a base class. The method that is 
+overridden by an override declaration is known as the overridden base method. The overridden base method must have the same 
+signature as the override method. 
+
+An overriding property declaration must specify exactly the same access modifier, type, and name as the inherited property, 
+and the overridden property must be virtual, abstract, or override.
+
+In this run time polymorphism or method overriding we can override a method in base class by creating similar function in 
+derived class this can be achieved by using inheritance principle and using “virtual & override” keywords.
+
+In base class if we declare methods with virtual keyword then only we can override those methods in derived class using 
+override keyword
+

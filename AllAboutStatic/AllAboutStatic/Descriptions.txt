@@ -1,0 +1,30 @@
+﻿//Harish Sune
+//harishsune@hotmail.com
+//22th March 2015
+
+The keyword static means only one copy will provided throughout the program.
+
+Static Class-
+
+
+In C# class can be declared as static. You cannot create object of this class.
+All the member variables and methods should be static.
+Public member and method can be directly access by using the class name.
+Static class cannot be inherited. and cannot inherit any other class or interface.
+
+Static Variables-
+
+Static Variables can be part of normal methods. But normal variables and methods cannot be part of static methods.
+
+Static Methods-
+
+Static Methods can access only static members of class.
+
+Static Constructor-
+
+A normal class can have static constructor as well as normal constructor.
+But Static class must have static constructor only.
+
+
+If u written static constructor in a normal class and u have Main() method in same class then your static constructor will
+always get calls even if you don't create object of that class.

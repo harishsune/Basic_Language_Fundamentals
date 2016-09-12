@@ -1,0 +1,24 @@
+﻿//Harish Sune
+//harishsune@hotmail.com
+//22th March 2015
+
+Inheritance allows you derive public,protected members of class to another. It is use to provide re usability of code.
+
+In c# ":" symbol is use to make inheritance between two class.
+Inheritance level depend upon the access modifiers used in class.
+
+Access modifiers are keywords used to specify the declared accessibility of a member or a type. This section introduces the four access modifiers:
+public
+protected
+internal
+private
+The following five accessibility levels can be specified using the access modifiers:
+public : Access is not restricted.
+protected : Access is limited to the containing class or types derived from the containing class.
+Internal : Access is limited to the current assembly.
+protected internal: Access is limited to the current assembly or types derived from the containing class.
+private : Access is limited to the containing type.
+
+Multiple inheritance is not possible in c#.
+
+You can inherit multiple Interfaces in single class.

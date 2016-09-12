@@ -1,0 +1,71 @@
+﻿//Harish Sune
+//harishsune@hotmail.com
+//22th March 2015
+
+One of the meanings of the abstract word is “exists in thought as an idea but does not have a physical or concrete 
+existence". In .Net, an abstract class is a special type of class that acts as a base class and cannot be instantiated. 
+Class members (methods, properties, indexers and events) are marked as abstract; it must be implemented by a derived class.
+
+Abstract classes, marked by the keyword abstract in the class definition, are typically used to define a base class in the 
+hierarchy. What's special about them, is that you can't create an instance of them - if you try, you will get a compile 
+error. Instead, you have to subclass them.
+
+If abstract class has only abstract methods then it is said to be pure abstract class.
+(An Interface can be pure abstract class.)
+
+An abstract class has the following features:
+ 
+
+It cannot be instantiated.
+
+It contains abstract as well as non-abstract members.
+
+We cannot mark an abstract class as a sealed class or static class.
+
+A derived class must include an actual implementation of all the inherited abstract class members.
+
+An abstract class can be inherited from an abstract as well as non-abstract class and one or more interfaces.
+Important notes for an abstract class that is inherited from an interface:
+
+An abstract class must provide an implementation of all interface members.
+
+An interface method might map with any abstract method of the abstract class.
+
+An abstract class may have private, internal, static non abstract-member
+
+Feature of abstract members
+
+Abstract methods
+
+An abstract method is implicitly a virtual method.
+
+A non-abstract class does not have an abstract method. It means an abstract method can only be declared with an abstract class.
+
+An abstract method cannot be declared as virtual or static.
+
+The access modifier of the abstract method should be the same in both of the abstract class as well as its derived class.
+
+Abstract properties
+
+Abstract properties are just like an abstract method, the only difference is in the declaration and invocation syntax.
+
+An abstract property cannot be declared as virtual or static.
+
+When to use an abstract Class
+
+An abstract class is a class that must be inherited from and it cannot be instantiated. It can be fully or partially implemented or not implemented at all, so that it is encapsulating common functionality for inherited classes.
+
+An abstract class provides an easy and simple way to version our components, so it is very useful in multiple versions of our component.
+
+If we are planning to create a large functional unit, it is recommended to use an abstract class.
+
+Abstract classes allow us to partially implement our classes; an abstract class is very useful for providing common implemented functionality among all implementations of our component.
+
+It is recommended to use an abstract class when creating a class library that will be widely distributed or reused.
+Design guidelines for Abstract Class
+
+Do not define public constructors because the visibility of the public or protected internal is for a type that can be instantiated. An abstract class can never be instantiated.
+
+Use a protected or internal constructor in an abstract class if required. A protected constructor does the initialization tasks when instances of a derived class are created. An internal constructor prevents the abstract class from being used as a base class when it is not in the same assembly.
+
+Provide at least one abstract member in an abstract class.

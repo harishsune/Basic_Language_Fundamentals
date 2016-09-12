@@ -1,0 +1,60 @@
+﻿//Harish Sune
+//harishsune@hotmail.com
+//22th March 2015
+
+Sealed classes are used to restrict the inheritance feature of object oriented programming. Once a class is defined as a 
+sealed class, the class cannot be inherited. But we can inherit a class or multiple Interfaces in sealed class.(This feature 
+is different from static class).
+
+In C#, the sealed modifier is used to define a class as sealed. In Visual Basic .NET the NotInheritable keyword serves the 
+purpose of sealed. If a class is derived from a sealed class then the compiler throws an error. 
+
+If you have ever noticed, structs are sealed. You cannot derive a class from a struct.  
+
+The following class definition defines a sealed class in C#: 
+
+
+// Sealed class
+sealed class SealedClass
+{
+
+} 
+
+Sealed Methods and Properties 
+
+You can also use the sealed modifier on a method or a property that overrides a virtual method or property in a base class.
+ This enables you to allow classes to derive from your class and prevent other developers that are using your classes from 
+ overriding specific virtual methods and properties. 
+
+class X
+{
+  protected virtual void F() { Console.WriteLine("X.F"); }
+  protected virtual void F2() { Console.WriteLine("X.F2"); }
+}
+
+class Y : X
+{
+  sealed protected override void F() { Console.WriteLine("Y.F"); }
+protected override void F2() { Console.WriteLine("X.F3"); }
+}
+
+class Z : Y
+{
+  // Attempting to override F causes compiler error CS0239. 
+  // protected override void F() { Console.WriteLine("C.F"); }
+// Overriding F2 is allowed. 
+  protected override void F2() { Console.WriteLine("Z.F2"); }
+}
+
+Why Sealed Classes?
+
+he main purpose of a sealed class is to take away the inheritance feature from the user so they cannot derive a class from a
+ sealed class. One of the best usage of sealed classes is when you have a class with static members. For example, the "Pens"
+  and "Brushes" classes of the "System.Drawing" namespace. 
+
+The Pens class represents the pens for standard colors. This class has only static members. For example, "Pens.Blue" 
+ a pen with the blue color. Similarly, the "Brushes" class represents standard brushes. "Brushes.Blue" represents a brush 
+ with blue color. 
+
+So when you're designing your application, you may keep in mind that you have sealed classes to seal the user's boundaries. 
+ 

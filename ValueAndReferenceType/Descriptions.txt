@@ -1,0 +1,9 @@
+﻿//Harish Sune
+//harishsune@hotmail.com
+//22th March 2015
+
+In value type actual value get pass to the function. This does not change the actual value.
+But if we use reference type then reference of particular variable get passed. As we are passing the reference the 
+actual value of the variable gets change.
+
+Note: See Program.cs for details.
